@@ -1,0 +1,65 @@
+:root {
+    --color-orange: rgb(188, 84, 25);
+    --color-white: white;
+    --color-grey: #b2bec3;
+    --color-blue-font: #2c3e50;
+    --color-orange-light: rgb(230, 163, 125);
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px repeat(2, 1fr);
+    gap: 20px;
+    background: var(--color-grey);
+    color: var(--color-blue-font);
+    font-weight: 900;
+}
+/*Estilos para el flip card*/
+.flip-card-front img {
+    width: 300px;
+    height: 250px;
+}
+.flip-card-contact {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.flip-card-contact:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+/* GRID */
+.flip-card-contact {
+    grid-column: 1;
+    grid-row: 2;
+}
+#div-contact{
+    grid-column: 1;
+    grid-row: 3;
+}

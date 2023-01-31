@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --color-orange:rgb(188, 84, 25);
+    --color-white: white;
+    --color-grey: #b2bec3;
+  }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    background: var(--color-grey);
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+header, main, section, footer{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    color: var(--color-white)
+}
+header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/ejemplo-img.jpg");
+}
+h2{
+    text-align: center;
+    height: 75px;
+    font-weight: 100;
+    font-size: 20;
+    color: var(--color-white);
+    background: var(--color-orange);
+    border-radius: 1rem;
+    padding: 20px 10px;
+}
+p{
+    font-size: 35px;
+    text-align: center;
+}
+header p span{
+    color: var(--color-orange);
+    background: black;
+}
+nav ul li{
+    list-style:none;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+    font-size: 20px;
+    color: var(--color-white);
+}
+header button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 40%;
+}
+header button a:link, header button a:visited, header button a:active{
+    color: var(--color-orange);
+}
+header button a{
+    font-size: 20px;
+    transition: 1s;
+}
+header button a:hover{
+    font-size: 35px;
+    transition: 1s;
+}
