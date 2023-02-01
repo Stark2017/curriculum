@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sobre-mi.css">
     <link rel="stylesheet" href="css/exp-edu.css">
@@ -16,20 +18,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
     <title>Proyecto CV</title>
 </head>
+
 <body>
+    <nav id="nav-principal">
+        <ul>
+            <li><a href="#presentacion">PRESENTACION</a> </li>
+            <li><a href="#sobre-mi">SOBRE MÍ - HERRAMIENTAS</a></li>
+            <li><a href="#exp-edu">EXPERIENCIA - EDUCACIÓN</a></li>
+            <li><a href="#logros">LOGROS</a></li>
+            <li><a href="#portafolio">PORTAFOLIO</a></li>
+            <li><a href="#contact">CONTACTO</a></li>
+        </ul>
+    </nav>
     <header id="presentacion">
         <h2>PRESENTACIÓN</h2>
         <p>Hola! Mi nombre es <span>Juan</span>. Soy Estudiante de Programación. Vivo en Buenos Aires.</p>
-        <nav>
-            <ul>
-                <li><a href="#presentacion">PRESENTACION</a> </li>
-                <li><a href="#sobre-mi">SOBRE MÍ - HERRAMIENTAS</a></li>
-                <li><a href="#exp-edu">EXPERIENCIA - EDUCACIÓN</a></li>
-                <li><a href="#logros">LOGROS</a></li>
-                <li><a href="#portafolio">PORTAFOLIO</a></li>
-                <li><a href="#contact">CONTACTO</a></li>
-            </ul>
-        </nav>
         <button><a href="#sobre-mi">COMENZAR</a></button>
     </header>
     <main id="sobre-mi">
@@ -42,7 +45,8 @@
             Harum, exercitationem. In molestias nam ut rem. Sunt, quisquam? Maiores hic sit, saepe deleniti eum dolore
             non molestiae voluptate voluptatum nisi eaque nam alias doloremque numquam excepturi odit labore? Corporis?
         </p>
-        <p id="p2-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit omnis ut placeat soluta atque dolorum,
+        <p id="p2-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit omnis ut placeat soluta
+            atque dolorum,
             nostrum harum necessitatibus suscipit voluptatibus perspiciatis vitae accusantium impedit, perferendis
             minus? Iusto eveniet animi harum?
             Harum, exercitationem. In molestias nam ut rem. Sunt, quisquam? Maiores hic sit, saepe deleniti eum dolore
@@ -97,7 +101,7 @@
     </main>
     <section id="exp-edu">
         <h2>EXPERIENCIA - EDUCACIÓN </h2>
-        <img src="https://az.genial.ly/users/57a85013244235518049e960/5a1563f4a162e14910d13161/5a1563f6a162e14910d131c6/2676aef8-e728-4803-bb81-c13e105ed6cd.png" alt="">
+        <img src="./img/experiencia.jpg" alt="imagen de codigo de programacion">
         <h3 id="exp-h3">EXPERIENCIA</h3>
         <div id="div-exp">
             <ul> 2013 - 2018
@@ -115,7 +119,7 @@
         <div id="div-edu">
             <ul> 2009 - 2011
                 <li>Escuela Media 17 <br> Secundario Graduado</li>
-                
+
             </ul>
             <ul> 2020 - 2020
                 <li>Curso Diseño Web</li>
@@ -130,22 +134,31 @@
     <section id="logros">
         <h2>LOGROS</h2>
         <h3>LOGROS</h3>
-        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores omnis quasi animi perspiciatis quo? Corporis debitis veritatis eligendi, similique perferendis, minus voluptatum voluptas, recusandae consequatur laboriosam minima ad tempore dolorem.</p>
-        <p id="p2"><span class="star-orange">&#9733</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. <br><br> <span class="star-orange">&#9733</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. </p>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores omnis quasi animi perspiciatis
+            quo? Corporis debitis veritatis eligendi, similique perferendis, minus voluptatum voluptas, recusandae
+            consequatur laboriosam minima ad tempore dolorem.</p>
+        <p id="p2"><span class="star-orange">&#9733</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis
+            vel, nisi. <br><br> <span class="star-orange">&#9733</span>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel,
+            dapibus id, mattis vel, nisi. </p>
         <div id="div-perfil">
             <h3>Echale un vistazo a mi perfil !</h3>
-            <img src="" alt="">
+            <a href="https://www.linkedin.com"><img src="./img/icons-social/sociallinkedin_member_2751.ico"
+                    alt="icono de linkedin"></a>
         </div>
         <div class="flip-box">
             <div class="flip-box-inner">
-              <div id="img-front">
-                <img src="https://refugiodelalma.com/wp-content/uploads/2019/08/como-sentirte-realizado-1280x720.jpg" alt="">
-              </div>
-              <div id="img-back">
-                <img src="https://sergiohuguet.com/wp-content/uploads/2019/09/sergio-huguet-sentirse-realizado.jpg" alt="">
-              </div>
+                <div id="img-front">
+                    <img src="https://refugiodelalma.com/wp-content/uploads/2019/08/como-sentirte-realizado-1280x720.jpg"
+                        alt="">
+                </div>
+                <div id="img-back">
+                    <img src="https://sergiohuguet.com/wp-content/uploads/2019/09/sergio-huguet-sentirse-realizado.jpg"
+                        alt="">
+                </div>
             </div>
-          </div>
+        </div>
     </section>
     <section id="portafolio">
         <h2>PORTAFOLIO</h2>
@@ -196,22 +209,33 @@
         <h2>CONTACTO</h2>
         <div class="flip-card-contact">
             <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img/img-contact.jpg" alt="imagen de contacto">
-              </div>
-              <div class="flip-card-back">
-                <br><br>
-                <h1>Juan Barrionuevo</h1>
-                <hr><br>
-                <p>Programador Jr</p> 
-              </div>
+                <div class="flip-card-front">
+                    <img src="img/fotoPerfilJuan.webp" alt="imagen de contacto">
+                </div>
+                <div class="flip-card-back">
+                    <br><br>
+                    <h1>Juan Barrionuevo</h1>
+                    <hr><br>
+                    <p>Web Developer</p>
+                </div>
             </div>
         </div>
         <div id="div-contact">
             <h3>ENCUÉNTRAME AQUÍ</h3>
-            <div>iconos redes sociales</div>
+            <div>Redes Sociales</div>
+            <ul>
+                <li>Facebook: <a href="https://www.facebook.com"><img src="./img/icons-social/social_facebook_fb_35.ico"
+                            alt="icono de facebook"></a></li>
+                <li>Twitter: <a href="https://www.twitter.com"><img src="./img/icons-social/social_Twitter_2755.ico"
+                            alt="icono de Twitter"></a></li>
+                <li>Skype: <a href="https://www.skype.com"><img src="./img/icons-social/social_skype_2754.ico"
+                            alt="icono de skype"></a></li>
+                <li>Linkedin: <a href="https://www.linkedin.com"><img
+                            src="./img/icons-social/sociallinkedin_member_2751.ico" alt="icono de linkedin"></a></li>
+            </ul>
         </div>
     </footer>
     <script src="js/index.js"></script>
 </body>
+
 </html>

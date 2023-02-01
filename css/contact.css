@@ -5,38 +5,76 @@
     --color-blue-font: #2c3e50;
     --color-orange-light: rgb(230, 163, 125);
 }
-footer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80px repeat(2, 1fr);
-    gap: 20px;
-    background: var(--color-grey);
-    color: var(--color-blue-font);
+
+footer {
+    background: rgb(34, 32, 32);
+    color: var(--color-grey);
     font-weight: 900;
 }
+
+footer h2 {
+    height: 70px;
+    font-weight: bolder;
+}
+
+#div-contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*Estilos para los Iconos redes sociales*/
+footer ul li a img {
+    width: 30px;
+    height: 30px;
+}
+
+footer ul li {
+    font-size: 26px;
+    text-align: left;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer ul li a {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
 /*Estilos para el flip card*/
 .flip-card-front img {
-    width: 300px;
-    height: 250px;
+    border-radius: 50%;
+    width: 280px;
+    height: 270px;
+    margin: auto;
+    cursor: pointer;
 }
+
 .flip-card-contact {
+    cursor: pointer;
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 270px;
+    margin: auto;
     perspective: 1000px;
 }
+
 .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
+    border-radius: 50%;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .flip-card-contact:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
+
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -44,22 +82,17 @@ footer{
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
 }
+
 .flip-card-front {
+    border-radius: 50%;
     background-color: #bbb;
     color: black;
 }
+
 .flip-card-back {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
-}
-/* GRID */
-.flip-card-contact {
-    grid-column: 1;
-    grid-row: 2;
-}
-#div-contact{
-    grid-column: 1;
-    grid-row: 3;
 }

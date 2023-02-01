@@ -1,56 +1,191 @@
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 380px) {
-    header {
+@media only screen and (min-width: 332px) {
+
+    /* EXPERIENCIA Y EDUCACION GRID A 332px*/
+    #exp-edu {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: 80px 30px 30% 30% 40%;
     }
-    header h2 {
+
+    #exp-edu h2 {
+        grid-column: 1;
         grid-row: 1;
     }
-    header nav {
-        grid-row: 2;
-        text-align: center;
+
+    #exp-edu img {
+        grid-column: 1;
+        grid-row: 5;
+        width: 171px;
+        height: 273px;
     }
-    header p {
+
+    #exp-h3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #edu-h3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #div-exp {
+        grid-column: 1;
         grid-row: 3;
     }
-    header button {
+
+    #div-edu {
+        grid-column: 1;
         grid-row: 4;
-        text-align: center;
     }
+
+    #div-exp ul,
+    #div-edu ul {
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    #div-exp ul li,
+    #div-edu ul li {
+        font-size: 18px;
+    }
+
+    /* SOBRE MI Y HERRAMIENTAS Grid a 332px*/
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 80px 30px repeat(3, auto) 5%;
-        gap: 20px;
-        overflow-y: auto;
+        grid-template-rows: 10vh 80px 30px 35% 30% 5%;
+        overflow-y: hidden;
     }
-    main h2{
+
+    main h2 {
         grid-column: span 2;
         grid-row: 1;
     }
+
     #span-main {
-        grid-column: span 2;
+        grid-column: 1;
         grid-row: 2;
         text-align: center;
     }
+
     #p1-main {
-        grid-column: span 2;
+        grid-column: 1;
         grid-row: 3;
     }
+
     #p2-main {
-        grid-column: span 2;
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #div1-main {
+        grid-column: 1;
         grid-row: 4;
     }
-    #div1-main {
+
+    #div2-main {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    /* EXPERIENCIA Y EDUCACION GRID A 332px*/
+    #exp-edu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10vh 80px 30px auto 30px auto 300px;
+    }
+
+    #exp-edu h2 {
         grid-column: span 2;
+        grid-row: 2;
+    }
+
+    #exp-h3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #edu-h3 {
+        grid-column: 1;
         grid-row: 5;
     }
-    #div2-main {
-        grid-column: span 2;
+
+    #div-exp {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #div-edu {
+        grid-column: 1;
         grid-row: 6;
     }
+
+    #exp-edu img {
+        grid-column: 2;
+        grid-row: 4 / 6;
+        width: 171px;
+        height: 273px;
+    }
+
+    #div-exp ul,
+    #div-edu ul {
+        font-size: 12px;
+        color: var(--color-grey-light);
+        margin-bottom: 10px;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    #div-exp ul li,
+    #div-edu ul li {
+        font-size: 18px;
+    }
+
+    /* Portafolio Grid a 334px */
+    #portafolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 80px 10% 30% 30% 30%;
+    }
+
+    #portafolio h2 {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    #Proyect1 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #Proyect2 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #Proyect3 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #Proyect4 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #Proyect5 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    #Proyect6 {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
 }
 
 /* Large devices (laptops/desktops) */
@@ -58,107 +193,396 @@
     header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 10vh repeat(3, 1fr);
     }
+
     header h2 {
-        grid-column: 2;
-        grid-row: 1;
-    }
-    header p {
-        grid-column: 1;
+        grid-column: span 2;
         grid-row: 2;
     }
-    header button {
-        grid-column: 1;
+
+    header p {
+        grid-column: span 2;
         grid-row: 3;
     }
+
+    header button {
+        grid-column: span 2;
+        grid-row: 4;
+    }
+
+    /* SOBRE MI Y HERRAMIENTAS Grid a 665px*/
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 80px 30px 35% 30% 5%;
-        gap: 20px;
+        grid-template-rows: 10vh 80px 30px 35% 30% 5%;
         overflow-y: hidden;
     }
-    main h2{
+
+    main h2 {
         grid-column: span 2;
         grid-row: 1;
     }
+
     #span-main {
         grid-column: 1;
         grid-row: 2;
         text-align: center;
     }
+
     #p1-main {
         grid-column: 1;
         grid-row: 3;
     }
+
     #p2-main {
         grid-column: 2;
         grid-row: 3;
     }
+
     #div1-main {
-        grid-column: 1 ;
+        grid-column: 1;
         grid-row: 4;
     }
+
     #div2-main {
         grid-column: 2;
         grid-row: 4;
     }
+
+    /* EXPERIENCIA Y EDUCACION GRID A 665px*/
+    #exp-edu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10vh 80px 30px auto 30px auto 300px;
+    }
+
+    #exp-edu h2 {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    #exp-h3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #edu-h3 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #div-exp {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #div-edu {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    #exp-edu img {
+        grid-column: 2;
+        grid-row: 4 / 6;
+        width: 171px;
+        height: 273px;
+    }
+
+    #div-exp ul,
+    #div-edu ul {
+        font-size: 12px;
+        color: var(--color-grey-light);
+        margin-bottom: 10px;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    #div-exp ul li,
+    #div-edu ul li {
+        font-size: 18px;
+    }
+
+    /* Logros Grid a 664px*/
+    #logros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 80px 30px 30% 30% 30% 10%;
+    }
+
+    #logros h2 {
+        grid-column: 1/ 2;
+        grid-row: 1;
+    }
+
+    #logros h3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #p1 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #p2 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #div-perfil {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .flip-box {
+        grid-column: 2;
+        grid-row: 2 / 4;
+    }
+
+    /* Portafolio Grid a 665px */
+    #portafolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 80px 10% 30% 30% 30%;
+    }
+
+    #portafolio h2 {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    #Proyect1 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #Proyect2 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #Proyect3 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #Proyect4 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #Proyect5 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    #Proyect6 {
+        grid-column: 2;
+        grid-row: 5;
+    }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up)*/
+
+/* Extra large devices (large laptops and desktops, 1100px and up)*/
 @media only screen and (min-width: 1100px) {
     header {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 10vh repeat(3, 1fr);
     }
+
     header h2 {
         grid-column: 2;
-        grid-row: 1;
+        grid-row: 2;
     }
+
     header p {
         grid-column: 2;
+        grid-row: 3;
     }
-    header nav {
-        display: flex;
-        justify-content: right;
-        z-index: 100;
-        position: fixed;
-        right: 10%;
-        top: 30%;
-    }
+
     header button {
         grid-column: 2 / 3;
+        grid-row: 4;
     }
+
     #sobre-mi {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 80px 30px 35% 60% 5%;
-        gap: 20px;
-        overflow: hidden;
+        grid-template-rows: 10vh 80px 30px 35% 60% 5%;
     }
-    main h2{
+
+    /* SOBRE MI Y HERRAMIENTAS Grid a 1100px*/
+    main h2 {
         grid-column: 2;
+        grid-row: 2;
     }
+
     #span-main {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 3;
         text-align: center;
     }
+
     #p1-main {
         grid-column: 1/2;
-        grid-row: 3;
+        grid-row: 4;
     }
+
     #p2-main {
         grid-column: 2 /3;
-        grid-row: 3;
+        grid-row: 4;
     }
+
     #div1-main {
         grid-column: 1 / 2;
-        grid-row: 4;
+        grid-row: 5;
     }
+
     #div2-main {
         grid-column: 2 / 3;
+        grid-row: 5;
+    }
+
+    /* Experiencia y Educación Grid a 1100px*/
+    #exp-edu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10vh 80px 30px 40% 60%;
+    }
+
+    #exp-edu h2 {
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+
+    #exp-edu img {
+        grid-column: 1;
+        grid-row: 4 / 5;
+        width: 271px;
+        height: 473px;
+    }
+
+    #exp-h3 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #edu-h3 {
+        grid-column: 4;
+        grid-row: 3;
+    }
+
+    #div-exp {
+        grid-column: 2;
+        grid-row: 4 / 5;
+    }
+
+    #div-edu {
+        grid-column: 4;
+        grid-row: 4 / 5;
+    }
+
+    /* Logros Grid a 1100px*/
+    #logros {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10vh 100px 80px 35% 60% 5%;
+    }
+
+    #logros h2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #p1 {
+        grid-column: 1;
         grid-row: 4;
     }
+
+    #p2 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    #logros h3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #div-perfil {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .flip-box {
+        grid-column: 3;
+        grid-row: 3 / 5;
+    }
+
+    /* Portafolio Grid a 1100px */
+    #portafolio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10vh 80px 10% 40% 40%;
+    }
+
+    #portafolio h2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #Proyect1 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #Proyect2 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #Proyect3 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    #Proyect4 {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    #Proyect5 {
+        grid-column: 3;
+        grid-row: 4;
+    }
+
+    #Proyect6 {
+        grid-column: 3;
+        grid-row: 5;
+    }
+
+    /*Grid Footer 1100px*/
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10vh 15vh repeat(2, 1fr);
+    }
+
+    footer h2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .flip-card-contact {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #div-contact {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
 }

@@ -5,68 +5,48 @@
     --color-blue-font: #2c3e50;
     --color-orange-light: rgb(230, 163, 125);
 }
+
 #portafolio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80px 25% 25% 25% 20% 5%;
-    gap: 20px;
     background: var(--color-grey);
     color: var(--color-blue-font);
     font-weight: 900;
 }
-#portafolio div img{
+
+#portafolio div img {
     width: 120px;
     height: 130px;
     border-radius: 50%;
     transition: 1s;
 }
-#portafolio div div{
+
+#portafolio div div {
     width: 140px;
     height: 150px;
 }
+
 #portafolio div img:hover {
     width: 130px;
     height: 140px;
     transition: 1s;
 }
-#portafolio nav ul li a {
-    color: var(--color-blue-font);
-}
-#Proyect1, #Proyect2, #Proyect3, #Proyect4, #Proyect5, #Proyect6{
+
+#Proyect1,
+#Proyect2,
+#Proyect3,
+#Proyect4,
+#Proyect5,
+#Proyect6 {
     width: 350px;
     height: auto;
     display: inline-flex;
 }
-#div-proyect p{
+
+#div-proyect p {
     font-size: 15px;
     text-align: start;
 }
-#div-proyect{
+
+#div-proyect {
     margin-left: 30px;
     text-align: left;
-}
-/* Grid CSS*/
-#Proyect1{
-    grid-column: 1;
-    grid-row: 2;
-}
-#Proyect2{
-    grid-column: 1;
-    grid-row: 3;
-}
-#Proyect3{
-    grid-column: 1;
-    grid-row: 4;
-}
-#Proyect4{
-    grid-column: 2;
-    grid-row: 2;
-}
-#Proyect5{
-    grid-column: 2;
-    grid-row: 3;
-}
-#Proyect6{
-    grid-column: 2;
-    grid-row: 4;
 }

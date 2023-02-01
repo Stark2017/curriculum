@@ -5,29 +5,31 @@
     --color-blue-font: #2c3e50;
     --color-orange-light: rgb(230, 163, 125);
 }
+
 #logros {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80px 30px 35% 60% 5%;
-    gap: 20px;
-    background: var(--color-grey);
+    background: #334d50;
+    background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);
+    background: linear-gradient(to right, #cbcaa5, #334d50);
     color: var(--color-blue-font);
     font-weight: 900;
 }
+
 #p1,
 #p2 {
     font-size: 15px;
 }
+
 #p2 {
     color: var(--color-orange);
 }
+
 #logros h3 {
     color: var(--color-orange);
     font-weight: bold;
+    text-align: center;
+    font-size: 26px;
 }
-#logros nav{
-    color: var(--color-blue-font);
-}
+
 .flip-box-inner {
     position: relative;
     width: 100%;
@@ -36,9 +38,11 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
+
 .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
 }
+
 #img-front,
 #img-back {
     position: absolute;
@@ -47,33 +51,14 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 #img-front img,
 #img-back img {
-    width: 352px;
-    height: 228px;
-}
-#img-back {
-    transform: rotateY(180deg);
+    width: 330px;
+    height: 350px;
+    border-radius: 10%;
 }
 
-/*  GRID */
-#p1 {
-    grid-column: 1;
-    grid-row: 3;
-}
-#p2 {
-    grid-column: 2;
-    grid-row: 3;
-}
-#logros h3 {
-    grid-column: 1;
-    grid-row: 2;
-}
-#div-perfil {
-    grid-column: 1;
-    grid-row: 4;
-}
-.flip-box {
-    grid-column: 2;
-    grid-row: 4;
+#img-back {
+    transform: rotateY(180deg);
 }
