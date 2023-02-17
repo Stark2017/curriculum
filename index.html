@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/sobre-mi.css">
-    <link rel="stylesheet" href="css/exp-edu.css">
-    <link rel="stylesheet" href="css/logros.css">
-    <link rel="stylesheet" href="css/portafolio.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-btn.css">
+    <link rel="stylesheet" href="css/grid.css">
     <title>Proyecto CV</title>
 </head>
-
 <body>
-    <nav id="nav-principal">
+    <nav class="close" id="nav-principal">
         <ul>
             <li><a href="#presentacion">PRESENTACION</a> </li>
             <li><a href="#sobre-mi">SOBRE MÍ - HERRAMIENTAS</a></li>
@@ -29,24 +20,20 @@
             <li><a href="#portafolio">PORTAFOLIO</a></li>
             <li><a href="#contact">CONTACTO</a></li>
         </ul>
+        <button id="btn-x" class="btn-x" type="button">X</button>
     </nav>
+    <button type="button" id="btn-hamburguesa">☰</button>
+    <button type="button" class="close" id="btn-top"><a href="#presentacion">⬆</a></button>
     <header id="presentacion">
         <h2>PRESENTACIÓN</h2>
         <p>Hola! Mi nombre es <span>Juan</span>. Soy Estudiante de Programación. Vivo en Buenos Aires.</p>
         <button><a href="#sobre-mi">COMENZAR</a></button>
     </header>
-    <main id="sobre-mi">
+    <section id="sobre-mi">
         <h2>SOBRE MI - HERRAMIENTAS</h2>
-        <span id="span-main">SOBRE MÍ</span>
+        <span id="span-sobre-mi">Introducción</span>
         <p id="p1-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit omnis ut
             placeat soluta atque dolorum,
-            nostrum harum necessitatibus suscipit voluptatibus perspiciatis vitae accusantium impedit, perferendis
-            minus? Iusto eveniet animi harum?
-            Harum, exercitationem. In molestias nam ut rem. Sunt, quisquam? Maiores hic sit, saepe deleniti eum dolore
-            non molestiae voluptate voluptatum nisi eaque nam alias doloremque numquam excepturi odit labore? Corporis?
-        </p>
-        <p id="p2-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit omnis ut placeat soluta
-            atque dolorum,
             nostrum harum necessitatibus suscipit voluptatibus perspiciatis vitae accusantium impedit, perferendis
             minus? Iusto eveniet animi harum?
             Harum, exercitationem. In molestias nam ut rem. Sunt, quisquam? Maiores hic sit, saepe deleniti eum dolore
@@ -98,10 +85,9 @@
             <span class="star">&#9733</span>
             <span class="star">&#9733</span>
         </div>
-    </main>
+    </section>
     <section id="exp-edu">
         <h2>EXPERIENCIA - EDUCACIÓN </h2>
-        <img src="./img/experiencia.jpg" alt="imagen de codigo de programacion">
         <h3 id="exp-h3">EXPERIENCIA</h3>
         <div id="div-exp">
             <ul> 2013 - 2018
@@ -133,7 +119,7 @@
     </section>
     <section id="logros">
         <h2>LOGROS</h2>
-        <h3>LOGROS</h3>
+        <h3>Titulo ilustrativo</h3>
         <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores omnis quasi animi perspiciatis
             quo? Corporis debitis veritatis eligendi, similique perferendis, minus voluptatum voluptas, recusandae
             consequatur laboriosam minima ad tempore dolorem.</p>
@@ -151,91 +137,97 @@
             <div class="flip-box-inner">
                 <div id="img-front">
                     <img src="https://refugiodelalma.com/wp-content/uploads/2019/08/como-sentirte-realizado-1280x720.jpg"
-                        alt="">
+                        alt="imagen ilustrativa">
                 </div>
                 <div id="img-back">
                     <img src="https://sergiohuguet.com/wp-content/uploads/2019/09/sergio-huguet-sentirse-realizado.jpg"
-                        alt="">
+                        alt="imagen ilustrativa">
                 </div>
             </div>
         </div>
     </section>
     <section id="portafolio">
         <h2>PORTAFOLIO</h2>
-        <div id="Proyect1">
-            <img src="img/img-edificio.jpg" alt="imagen de edificio">
-            <div id="div-proyect">
-                <h3>Proyect 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <div id="cont-portafolio">
+            <div id="Proyect1">
+                <img src="img/img-edificio.jpg" alt="imagen de edificio">
+                <div>
+                    <span>Proyect 1</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
             </div>
-        </div>
-        <div id="Proyect2">
-            <img src="img/img-edificio.jpg" alt="imagen de edificio">
-            <div id="div-proyect">
-                <h3>Proyect 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <div id="Proyect2">
+                <img src="img/img-edificio.jpg" alt="imagen de edificio">
+                <div>
+                    <span>Proyect 2</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
             </div>
-        </div>
-        <div id="Proyect3">
-            <img src="img/img-edificio.jpg" alt="imagen de edificio">
-            <div id="div-proyect">
-                <h3>Proyect 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <div id="Proyect3">
+                <img src="img/img-edificio.jpg" alt="imagen de edificio">
+                <div>
+                    <span>Proyect 3</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
             </div>
-        </div>
-        <div id="Proyect4">
-            <img src="img/img-edificio.jpg" alt="imagen de edificio">
-            <div id="div-proyect">
-                <h3>Proyect 4</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <div id="Proyect4">
+                <img src="img/img-edificio.jpg" alt="imagen de edificio">
+                <div>
+                    <span>Proyect 4</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
             </div>
-        </div>
-        <div id="Proyect5">
-            <img src="img/img-edificio.jpg" alt="imagen de edificio">
-            <div id="div-proyect">
-                <h3>Proyect 5</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <div id="Proyect5">
+                <img src="img/img-edificio.jpg" alt="imagen de edificio">
+                <div>
+                    <span>Proyect 5</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
             </div>
-        </div>
-        <div id="Proyect6">
-            <img src="img/img-edificio.jpg" alt="imagen de edificio">
-            <div id="div-proyect">
-                <h3>Proyect 6</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <div id="Proyect6">
+                <img src="img/img-edificio.jpg" alt="imagen de edificio">
+                <div>
+                    <span>Proyect 6</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
             </div>
         </div>
     </section>
     <footer id="contact">
         <h2>CONTACTO</h2>
-        <div class="flip-card-contact">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="img/fotoPerfilJuan.webp" alt="imagen de contacto">
-                </div>
-                <div class="flip-card-back">
-                    <br><br>
-                    <h1>Juan Barrionuevo</h1>
-                    <hr><br>
-                    <p>Web Developer</p>
+        <div id="main-footer">
+            <div class="flip-card-contact">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/fotoPerfilJuan.webp" alt="imagen de contacto">
+                    </div>
+                    <div class="flip-card-back">
+                        <br>
+                        <h1>Juan Barrionuevo</h1>
+                        <hr><br>
+                        <p>Web Developer</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="div-contact">
-            <h3>ENCUÉNTRAME AQUÍ</h3>
-            <div>Redes Sociales</div>
-            <ul>
-                <li>Facebook: <a href="https://www.facebook.com"><img src="./img/icons-social/social_facebook_fb_35.ico"
-                            alt="icono de facebook"></a></li>
-                <li>Twitter: <a href="https://www.twitter.com"><img src="./img/icons-social/social_Twitter_2755.ico"
-                            alt="icono de Twitter"></a></li>
-                <li>Skype: <a href="https://www.skype.com"><img src="./img/icons-social/social_skype_2754.ico"
-                            alt="icono de skype"></a></li>
-                <li>Linkedin: <a href="https://www.linkedin.com"><img
-                            src="./img/icons-social/sociallinkedin_member_2751.ico" alt="icono de linkedin"></a></li>
-            </ul>
+            <div id="div-contact">
+                <h3>ENCUÉNTRAME AQUÍ</h3>
+                <div>Redes Sociales</div>
+                <ul>
+                    <li>Facebook: <a href="https://www.facebook.com"><img src="./img/icons-social/social_facebook_fb_35.ico"
+                                alt="icono de facebook"></a></li>
+                    <li>Twitter: <a href="https://www.twitter.com"><img src="./img/icons-social/social_Twitter_2755.ico"
+                                alt="icono de Twitter"></a></li>
+                    <li>Skype: <a href="https://www.skype.com"><img src="./img/icons-social/social_skype_2754.ico"
+                                alt="icono de skype"></a></li>
+                    <li>Linkedin: <a href="https://www.linkedin.com"><img
+                                src="./img/icons-social/sociallinkedin_member_2751.ico" alt="icono de linkedin"></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/menu-hamburguesa.js"></script>
+    <script src="js/btn-top.js"></script>
 </body>
 
 </html>

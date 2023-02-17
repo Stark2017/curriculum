@@ -1,0 +1,50 @@
+:root {
+    --color-orange: rgb(188, 84, 25);
+    --color-white: white;
+    --color-grey: #b2bec3;
+    --color-grey-light: #d8d9da;
+    --color-blue-font: #2c3e50;
+    --color-orange-light: rgb(230, 163, 125);
+}
+
+#btn-hamburguesa{
+    width: 3rem;
+    height: 3rem;
+    top: 10vh;
+    background-color: var(--color-blue-font);
+    position: fixed;
+    cursor: pointer;
+    color: var(--color-white);
+    border: 2px solid white;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 1rem;
+    padding: 5px 15px;
+}
+
+#btn-top{
+    width: 3rem;
+    height: 3rem;
+    bottom: 10vh;
+    right: 0;
+    background-color: var(--color-blue-font);
+    position: fixed;
+    cursor: pointer;
+    color: var(--color-white);
+    border: 2px solid white;
+    font-weight: 900;
+    font-size: 32px;
+    border-radius: 1rem;
+}
+#btn-top a{
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+}
+
+.close{
+    display: none;
+}
+.open{     
+        display: flex;  
+}
