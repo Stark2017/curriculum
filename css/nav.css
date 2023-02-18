@@ -4,16 +4,10 @@
     --color-grey: #b2bec3;
     --color-grey-dark: rgb(69, 68, 68, 0.9);
 }
-nav a:hover {
-    color: var(--color-orange);
-}
-
 
 #nav-principal{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start ;
     position: fixed;
+    align-items: flex-start;
     z-index: 1;
     width: 80vw;
     height: 90vh;
@@ -24,31 +18,19 @@ nav a:hover {
 #nav-principal ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     background: var(--color-grey-dark);
     font-size: 10px;
     height: 90vh;
-    width: 100%;
+    width: 90vw;
 }
 
 #nav-principal ul li {
     display: flex;
     align-items: center;
     height: 100%;
+    width: 100%;
     background: var(--color-grey-dark);
     list-style: none;
-}
-
-.btn-x{
-    cursor: pointer;
-    color: var(--color-white);
-    border: 2px solid white;
-    font-weight: 900;
-    background: none;
-    font-size: 20px;
-    border-radius: 1rem;
-    margin: 15px;
-    padding: 5px 15px;
 }
 
 #nav-principal a:link,
@@ -57,7 +39,17 @@ a:active {
     text-decoration: none;
     font-size: 15px;
     color: var(--color-white);
-    margin-left: 10px;
+}
+
+nav a:hover {
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    transition: 1.3s;
+    height: 100%;
+    width: 100%;
+    font-weight: 900;
+    background-color: var(--color-orange);
 }
 
 
@@ -67,51 +59,3 @@ a:active {
 .open{     
         display: flex;  
 }
-
-/*
-Estilos en line
-
-
-nav a:hover {
-    color: var(--color-orange);
-}
-#nav-principal {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 9.5%;
-    right: 10%;
-    z-index: 100;
-    width: 80vw;
-    height: 10vh;
-    color: var(--color-white)
-}
-
-#nav-principal ul {
-    display: flex;
-    flex-direction: row;
-    height: 10vh;
-    background: var(--color-grey-dark);
-    font-size: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-#nav-principal ul li {
-    list-style: none;
-}
-
-#nav-principal a:link,
-a:visited,
-a:active {
-    text-decoration: none;
-    font-size: 15px;
-    color: var(--color-white);
-    margin-left: 10px;
-}
-
-@media screen {
-    
-}
-
-*/
