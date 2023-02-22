@@ -62,24 +62,44 @@ body {
     }
 
     #nav-principal {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         position: fixed;
         z-index: 100;
         height: 10vh;
         top: 0;
-        left: 5%;
-        color: var(--color-white)
+        left: 10%;
+        color: var(--color-white);
+        background: none;
+    }
+    #nav-principal div{
+        display: flex;
+        width: 8vw;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
+    }
+    #nav-principal div img{
+        display: flex;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+    }
+    #nav-principal div img:hover{
+        transform: rotate3d(0, 1, 0, 720deg);
+        transition: 3.5s;
     }
 
     #nav-principal ul {
         display: flex;
         flex-direction: row;
         height: 10vh;
-        background: var(--color-grey-dark);
         font-size: 10px;
     }
 
     #nav-principal ul li {
+        border: none;
         list-style: none;
     }
 

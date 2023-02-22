@@ -13,6 +13,7 @@
     --color-grey: #b2bec3;
     --color-grey-light: #d8d9da;
     --color-blue-font: #2c3e50;
+    --color-grey-dark: rgb(69, 68, 68, 0.9);
     --color-orange-light: rgb(230, 163, 125);
 }
 
@@ -227,16 +228,14 @@ header button a:hover {
     height: auto;
 }
 
-#portafolio div img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    transition: 1s;
+#portafolio div div{
+    background-color: var(--color-grey-light);
+    color: var(--color-blue-font);
 }
 
-#portafolio div img:hover {
-    cursor: pointer;
-    transition: 1s;
+#portafolio div img {
+    width: 100%;
+    height: 7rem;
 }
 
 #cont-portafolio span {
@@ -273,10 +272,34 @@ footer h2 {
     height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
+#contenedor-flip-card-y-contact{
+    display: flex;
+    flex-direction: column;
 
-#div-contact {
+}
+
+#div-tel-mail{
+    width: 100%;
+}
+#div-tel-mail span{
+    font-weight: 900;
+    font-size: 25px;
+}
+
+#div-tel-mail div{
+    display: flex;
+    flex-direction: column;
+}
+#div-tel-mail img{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+#div-redes-sociales {
     display: flex;
     flex-direction: column;
     justify-content: center;

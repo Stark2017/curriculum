@@ -14,6 +14,9 @@
     background: rgb(46, 45, 45, 0.9);
     color: var(--color-white);
 }
+#nav-principal img{
+    display: none;
+}
 
 #nav-principal ul {
     display: flex;
@@ -27,31 +30,32 @@
 #nav-principal ul li {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
     width: 100%;
     background: var(--color-grey-dark);
     list-style: none;
+    border: solid 1px var(--color-grey);
 }
 
 #nav-principal a:link,
 a:visited,
 a:active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     text-decoration: none;
     font-size: 15px;
     color: var(--color-white);
 }
 
 nav a:hover {
-    display: flex;
-    align-items: center;
     padding-left: 15%;
     transition: 1.3s;
-    height: 100%;
-    width: 100%;
-    font-weight: 900;
     background-color: var(--color-orange);
 }
-
 
 .close{
     display: none;
