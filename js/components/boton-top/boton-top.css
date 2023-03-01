@@ -1,0 +1,39 @@
+:host{
+    --color-orange: rgb(188, 84, 25);
+    --color-white: white;
+    --color-grey-blue: #2c3e50;
+}
+
+#btn-top{
+    width: 3rem;
+    height: 3rem;
+    bottom: 10vh;
+    right: 0;
+    background-color:var(--color-grey-blue);
+    position: fixed;
+    cursor: pointer;
+    border: 2px solid var(--color-white);
+    font-weight: 900;
+    font-size: 32px;
+    border-radius: 1rem;
+}
+#btn-top a{
+    color: var(--color-white);
+    padding: 0 .5rem;
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+}
+#btn-top a:hover{
+    transition: .5s;
+    color: var(--color-orange);
+}
+#btn-top:hover{
+    transition: 1s;
+    border: 2px solid var(--color-orange);
+    color: var(--color-orange);
+}
+
+.close{
+    display: none;
+}

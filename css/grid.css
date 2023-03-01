@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows:  repeat(7, auto);
+    grid-template-rows: repeat(7, auto);
     grid-template-areas:
         "nav"
         "header"
@@ -10,10 +10,6 @@ body {
         "portafolio"
         "portafolio"
         "contact";
-}
-
-#nav-principal {
-    grid-area: nav;
 }
 
 #presentacion {
@@ -38,6 +34,7 @@ body {
 
 @media only screen and (min-width: 767px) {
     body {
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "nav nav"
             "header header"
@@ -47,82 +44,20 @@ body {
             "contact contact";
     }
 
-    #btn-hamburguesa{
-        display: none;
-    }
-    #btn-x{
-        display: none;
-    }
-
-    nav a:hover {
-        padding-left: 0;
-        background-color: var(--color-grey-dark);
-        color: var(--color-orange);
-        transition: 0.5s;
-    }
-
-    #nav-principal {
-        display: flex;
+    #main-footer {
         flex-direction: row;
-        justify-content: space-between;
-        position: fixed;
-        z-index: 100;
-        height: 10vh;
-        top: 0;
-        left: 10%;
-        color: var(--color-white);
-        background: none;
-    }
-    #nav-principal div{
-        display: flex;
-        width: 8vw;
-        height: 10vh;
-        align-items: center;
-        justify-content: center;
-    }
-    #nav-principal div img{
-        display: flex;
-        border-radius: 50%;
-        width: 5rem;
-        height: 5rem;
-    }
-    #nav-principal div img:hover{
-        transform: rotate3d(0, 1, 0, 720deg);
-        transition: 3.5s;
     }
 
-    #nav-principal ul {
-        display: flex;
-        flex-direction: row;
-        height: 10vh;
-        font-size: 10px;
+    #contenedor-flip-card-y-contact,
+    #div-redes-sociales {
+        width: 50vw;
+        height: 80vh;
+        margin: 1rem;
     }
 
-    #nav-principal ul li {
-        border: none;
-        list-style: none;
+    #div-tel-mail {
+        margin-left: 5vw;
+        width: 40vw;
     }
 
-    #nav-principal a:link,
-    a:visited,
-    a:active {
-        text-decoration: none;
-        font-size: 15px;
-        color: var(--color-white);
-        margin-left: 10px;
-    }
-}
-
-
-@media only screen and (min-width: 1000px) {
-    body {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "nav nav"
-            "h2  h2 "
-            "header header"
-            "exp-edu sobre-mi"
-            "portafolio portafolio"
-            "contact contact";
-    }
 }

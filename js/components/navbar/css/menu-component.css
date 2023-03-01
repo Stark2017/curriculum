@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+:host{
+    font-family: 'Mukta', sans-serif;
+    --color-orange: rgb(188, 84, 25);
+    --color-white: white;
+    --color-grey: #b2bec3;
+    --color-grey-light: #d8d9da;
+    --color-blue-font: #2c3e50;
+    --color-grey-dark: #2c2d2c;
+    --color-orange-light: rgb(230, 163, 125);
+}
+
+:host nav{
+    display: flex;
+    position: fixed;
+    align-items: flex-start;
+    z-index: 1;
+    left: -20vw;
+    width: 0;
+    height: 90vh;
+    transition: width .5s ease;
+    color:  var(--color-white);
+}
+:host nav img{
+    display: none;
+}
+
+:host ul {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-grey-dark);
+    font-size: 10px;
+    width: 0;
+    transition: width .5s ease;
+    height: 90vh;
+}
+
+:host li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    background: var(--color-grey-dark);
+    list-style: none;
+    border: solid 1px var(--color-grey);
+}
+
+:host a:link,
+:host a:visited,
+:host a:active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--color-white);
+}
+
+:host a:hover {
+    padding-left: 10%;
+    transition: .5s;
+    background-color: var(--color-orange);
+}
+
+:host #btn-hamburguesa{
+    display: block;
+    z-index: 2000;
+    left: 0;
+    top: 3vh;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-blue-font);
+    position: fixed;
+    cursor: pointer;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 1rem;
+    padding: 5px 15px;
+}
+:host #btn-hamburguesa:hover{
+    transition: .5s;
+    border: 2px solid var(--color-orange);
+    color:var(--color-orange);
+}
+
+:host([open]) nav{
+    width: 90vw;
+    left: -10vw;
+    transition: left ease .5s;
+}
+:host([open]) ul{
+    width: 90vw;
+}
+:host([open]) #btn-hamburguesa {
+    left: 80vw;
+    transition: left ease .5s;
+}

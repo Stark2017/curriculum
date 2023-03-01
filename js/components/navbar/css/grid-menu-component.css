@@ -1,0 +1,54 @@
+@media only screen and (min-width: 767px) {
+    :host #btn-hamburguesa{
+        display: none;
+    }
+    :host a:hover {
+        background:#2c2d2c;
+        color: rgb(188, 84, 25);
+        transition: 0.5s;
+    }
+    :host nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 100;
+        height: 10vh;
+        width: 80vw;
+        top: 0;
+        left: 5%;
+        color: white;
+    }
+    :host nav div{
+        display: flex;
+        width: 8vw;
+        height: 15vh;
+        align-items: center;
+        justify-content: center;
+    }
+    :host nav div img{
+        display: flex;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+    }
+    :host nav div img:hover{
+        transform: rotate3d(0, 1, 0, 720deg);
+        transition: 3.5s;
+    }
+
+    :host ul{
+        display: flex;
+        flex-direction: row;
+        min-width: 100%;
+        height: 10vh;
+        font-size: 10px;
+    }
+
+    :host nav ul li {
+        border: none;
+        list-style: none;
+    }
+    
+}
