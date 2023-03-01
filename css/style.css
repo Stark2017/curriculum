@@ -226,20 +226,26 @@ header button a:hover {
     width: 90vw;
 }
 
-#portafolio div {
-    margin: 1rem;
-    width: auto;
-    height: auto;
-}
-
-#portafolio div div {
+#Proyect1, #Proyect2, #Proyect3, #Proyect4, #Proyect5, #Proyect6{
+    max-width: 80vw;
     background-color: var(--color-grey-light);
     color: var(--color-blue-font);
 }
 
-#portafolio div img {
-    width: 100%;
-    height: 7rem;
+#portafolio div div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#portafolio div div img {
+    width: 20rem;
+    height: 10rem;
+}
+
+#portafolio div {
+    margin: 1rem;
+    height: auto;
 }
 
 #cont-portafolio span {
@@ -251,6 +257,12 @@ header button a:hover {
 #cont-portafolio p {
     font-size: 15px;
     text-align: start;
+}
+
+#cont-portafolio div div a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-blue-font);
 }
 
 /* END PORTAFOLIO STYLES */

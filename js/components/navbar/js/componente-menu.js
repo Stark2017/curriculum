@@ -42,6 +42,10 @@ class Menu extends HTMLElement{
             this.toggleAttribute("open")
         })
 
+        this.ul.addEventListener("click", (e)=>{
+            this.toggleAttribute("open")
+        } )
+
         this.nav.append(this.div, this.ul);
 
         // Agrego al ShadowRoot el nav
