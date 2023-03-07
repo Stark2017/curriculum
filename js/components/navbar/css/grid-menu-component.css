@@ -50,5 +50,13 @@
         border: none;
         list-style: none;
     }
+    /*Para que el menu, no se bugee en modo desktop */
+    :host([open]) nav{ 
+        width: 80vw;
+        left: 5%;
+    }
+    :host([open]) ul{
+        width: 0;
+    }
     
 }

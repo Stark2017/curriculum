@@ -12,9 +12,9 @@
 
 <body>
     <header id="presentacion">
-        <h2>Presentación</h2>
-        <p>Hola! Mi nombre es <span>Juan</span>. Soy Estudiante autodidacta de Programación. Vivo en Buenos Aires.</p>
-        <button><a href="#sobre-mi">COMENZAR</a></button>
+        <h2 class="izquierda">Presentación</h2>
+        <p class="derecha">Hola! Mi nombre es <span>Juan</span>. Soy Estudiante autodidacta de Programación. Vivo en Buenos Aires.</p>
+        <button class="izquierda"><a href="#sobre-mi">COMENZAR</a></button>
     </header>
     <section id="sobre-mi">
         <h2>Sobre Mí</h2>
@@ -39,7 +39,7 @@
             En lo personal, me case hace 4 años, formamos una familia con dos hijos, y son mi sostén. <br> Mi meta es
             trabajar duro para brindarles lo mejor y poder disfrutar junto con ellos.
         </p>
-        <div id="cont-herramientas-idiomas" class="row">
+        <div id="cont-herramientas-idiomas">
             <div id="div1-main">
                 <h3>HERRAMIENTAS</h3>
                 <p>HTML - CSS </p>
@@ -222,6 +222,7 @@
     <component-boton-top></component-boton-top>
     <script type="module" src="./js/components/navbar/js/componente-menu.js"></script>
     <script type="module" src="./js/components/boton-top/boton-top-component.js"></script>
+    <script src="./js/intersectionObserved.js"></script>
 </body>
 
 </html>

@@ -31,7 +31,15 @@ body {
 #contact {
     grid-area: contact;
 }
-
+@media only screen and (min-width: 450px) {
+    #portafolio div div{
+        width: 60vw;
+    }
+    
+    #portafolio div div img {
+        width:  55vw;
+    }
+}
 @media only screen and (min-width: 767px) {
     body {
         grid-template-columns: repeat(2, 1fr);
@@ -42,6 +50,15 @@ body {
             "exp-edu exp-edu "
             "portafolio portafolio"
             "contact contact";
+    }
+    #cont-herramientas-idiomas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #div1-main, #div2-main{
+        width: 40vw;
     }
 
     #main-footer {
@@ -58,6 +75,13 @@ body {
     #div-tel-mail {
         margin-left: 5vw;
         width: 40vw;
+    }
+    #portafolio div div{
+        width: 35vw;
+    }
+    
+    #portafolio div div img {
+        width:  32vw;
     }
 
 }
