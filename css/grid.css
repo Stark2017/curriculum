@@ -39,6 +39,16 @@ body {
     #portafolio div div img {
         width:  55vw;
     }
+    .izquierda{
+        transform: translateX(-15rem);
+    }
+    .derecha{
+        transform: translate(15rem);
+    }
+    .visible{
+        opacity: 1;
+        transform:scale(1) translateX(0);
+    }
 }
 @media only screen and (min-width: 767px) {
     body {
