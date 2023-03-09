@@ -31,25 +31,30 @@ body {
 #contact {
     grid-area: contact;
 }
+
 @media only screen and (min-width: 450px) {
-    #portafolio div div{
+    #portafolio div div {
         width: 60vw;
     }
-    
+
     #portafolio div div img {
-        width:  55vw;
+        width: 55vw;
     }
-    .izquierda{
+
+    .izquierda {
         transform: translateX(-15rem);
     }
-    .derecha{
+
+    .derecha {
         transform: translate(15rem);
     }
-    .visible{
+
+    .visible {
         opacity: 1;
-        transform:scale(1) translateX(0);
+        transform: translateX(0);
     }
 }
+
 @media only screen and (min-width: 767px) {
     body {
         grid-template-columns: repeat(2, 1fr);
@@ -61,13 +66,16 @@ body {
             "portafolio portafolio"
             "contact contact";
     }
-    #cont-herramientas-idiomas{
+
+    #cont-herramientas-idiomas {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    #div1-main, #div2-main{
+
+    #div1-main,
+    #div2-main {
         width: 40vw;
     }
 
@@ -86,12 +94,17 @@ body {
         margin-left: 5vw;
         width: 40vw;
     }
-    #portafolio div div{
-        width: 35vw;
+
+    #portafolio div div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 30vw;
     }
-    
+
     #portafolio div div img {
-        width:  32vw;
+        width: 25vw;
     }
 
 }

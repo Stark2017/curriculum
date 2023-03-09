@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
-:host{
+
+:host {
     font-family: 'Mukta', sans-serif;
     --color-orange: rgb(188, 84, 25);
     --color-white: white;
@@ -10,7 +11,7 @@
     --color-orange-light: rgb(230, 163, 125);
 }
 
-:host nav{
+:host nav {
     display: flex;
     position: fixed;
     align-items: flex-start;
@@ -19,9 +20,10 @@
     width: 0;
     height: 90vh;
     transition: width .5s ease;
-    color:  var(--color-white);
+    color: var(--color-white);
 }
-:host nav img{
+
+:host nav img {
     display: none;
 }
 
@@ -65,7 +67,7 @@
     background-color: var(--color-orange);
 }
 
-:host #btn-hamburguesa{
+:host #btn-hamburguesa {
     display: block;
     z-index: 2000;
     left: 0;
@@ -82,20 +84,23 @@
     border-radius: 1rem;
     padding: 5px 15px;
 }
-:host #btn-hamburguesa:hover{
+
+:host #btn-hamburguesa:hover {
     transition: .5s;
     border: 2px solid var(--color-orange);
-    color:var(--color-orange);
+    color: var(--color-orange);
 }
 
-:host([open]) nav{
+:host([open]) nav {
     width: 90vw;
     left: -10vw;
     transition: left ease .5s;
 }
-:host([open]) ul{
+
+:host([open]) ul {
     width: 90vw;
 }
+
 :host([open]) #btn-hamburguesa {
     left: 80vw;
     transition: left ease .5s;
